@@ -70,9 +70,15 @@ const App = () => {
   }, [currentIndex]);
 
   const checkValue = () => {
-    if (shuffledCharacters.length > 0) {
+    console.log("hi");
+    console.log(initialWords[currentIndex]);
+    console.log(inputText);
+    console.log(inputText === initialWords[currentIndex]);
+    console.log(shuffledCharacters.length);
+    if (shuffledCharacters.length === 0) {
       if (initialWords[currentIndex] === inputText) {
         notify();
+        console.log("ji");
       } else {
         notify1();
       }
